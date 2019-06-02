@@ -26,8 +26,8 @@ class Home extends Component {
     <thead>
       <tr className="col-md-12">
         <th className="col-md-3">Contest Name</th>
-        <th className ="col-md-3">Link</th>
         <th className="col-md-3">Phase</th>
+        <th className ="col-md-3">Link</th>
         <th className="col-md-3">StartDate</th>
       </tr>
     </thead>
