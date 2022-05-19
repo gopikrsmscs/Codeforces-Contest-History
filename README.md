@@ -1,4 +1,7 @@
-Codeforces Contests
+Codeforces Contests Fetcher
+
+![Screenshot](Screenshots/1.png)
+
 
 Software Used <br/>1.React js <br/>2.bootstrap<br/> 3.HTML<br/> 4.CSS <br/>5.React router DOM(For routing purpuse)<br/>
 
