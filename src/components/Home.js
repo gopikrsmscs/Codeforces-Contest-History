@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
 import axios from 'axios';
-import '/ReactJs/contest/src/App.css';
-import TableList from 'TableList'
+import '../App.css'
+import TableList from './TableList'
 class Home extends Component {
   constructor(){
     super()
@@ -9,6 +9,8 @@ class Home extends Component {
       datas: []
     }
   }
+ 
+
   componentDidMount() {
     axios.get(`https://codeforces.com/api/contest.list?`)
    .then(res => {
@@ -17,11 +19,12 @@ class Home extends Component {
        datas : result
      });
    });
+   document.title = "Codeforces Contest Page";
  }
   render() {
     return (
       <div className="container">
-      <h1 className="textalign">Codeforces Contest History</h1>
+      <h1 className="textalign">Codeforces Contests</h1>
       <table className="table">
     <thead>
       <tr className="col-md-12">
